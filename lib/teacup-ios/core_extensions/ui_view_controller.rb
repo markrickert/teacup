@@ -3,7 +3,7 @@ class UIViewController
   include Teacup::Controller
 
   def viewDidLoad
-    teacupDidLoad
+    teacupDidLoad unless $_view_did_load
   end
 
   # This method *used* to be useful for the `shouldAutorotateToOrientation`
